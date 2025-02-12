@@ -84,7 +84,7 @@ The evaluation produces:
 │   ├── training.py      # Training functions
 │   ├── visualization.py # Visualization utilities
 │   └── __init__.py
-├── main.py             # Training script
+├── LoopNet.py            # Training script
 ├── evaluate.py         # Evaluation script
 └── requirements.txt    # Project dependencies
 ```
