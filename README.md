@@ -2,43 +2,6 @@
 
 LoopNet: A Multitasking Few-Shot Learning Approach for Loop Closure in Large Scale SLAM
 
-## Project Structure
-```
-├── checkpoints/          # Model checkpoints directory
-├── configs/             
-│   └── config.yaml      # Configuration file
-├── data/
-│   └── dataset.py       # Dataset handling
-├── models/
-│   ├── disk.py          # DISK feature extractor
-│   ├── loss.py          # Loss functions
-│   ├── resnet_disk.py   # Main model architecture
-│   └── __init__.py
-├── outputs/             # Evaluation outputs
-├── utils/
-│   ├── config.py        # Configuration utilities
-│   ├── training.py      # Training functions
-│   ├── visualization.py # Visualization utilities
-│   └── __init__.py
-├── main.py             # Training script
-├── evaluate.py         # Evaluation script
-└── requirements.txt    # Project dependencies
-```
-
-## Requirements
-```
-torch>=2.0.0
-torchvision>=0.15.0
-kornia>=0.7.0
-numpy>=1.21.0
-Pillow>=9.0.0
-matplotlib>=3.5.0
-seaborn>=0.11.0
-scikit-learn>=1.0.0
-tqdm>=4.65.0
-pyyaml>=6.0.0
-```
-
 ## Installation
 
 1. Clone the repository:
@@ -115,6 +78,43 @@ Planned improvements:
 3. Architecture optimization
 4. Cross-dataset validation
 5. Ensemble approaches
+
+## Project Structure
+```
+├── checkpoints/          # Model checkpoints directory
+├── configs/             
+│   └── config.yaml      # Configuration file
+├── data/
+│   └── dataset.py       # Dataset handling
+├── models/
+│   ├── disk.py          # DISK feature extractor
+│   ├── loss.py          # Loss functions
+│   ├── resnet_disk.py   # Main model architecture
+│   └── __init__.py
+├── outputs/             # Evaluation outputs
+├── utils/
+│   ├── config.py        # Configuration utilities
+│   ├── training.py      # Training functions
+│   ├── visualization.py # Visualization utilities
+│   └── __init__.py
+├── main.py             # Training script
+├── evaluate.py         # Evaluation script
+└── requirements.txt    # Project dependencies
+```
+
+## Requirements
+```
+torch>=2.0.0
+torchvision>=0.15.0
+kornia>=0.7.0
+numpy>=1.21.0
+Pillow>=9.0.0
+matplotlib>=3.5.0
+seaborn>=0.11.0
+scikit-learn>=1.0.0
+tqdm>=4.65.0
+pyyaml>=6.0.0
+```
 
 ## License
 
