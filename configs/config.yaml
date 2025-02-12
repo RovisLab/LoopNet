@@ -1,0 +1,42 @@
+# Data paths
+data:
+  train_path: "path/to/your/train"
+  val_path: "path/to/your/val"
+  test_path: "path/to/your/test"
+  batch_size: 32
+  num_workers: 4
+  pin_memory: true
+
+# Model settings
+model:
+  num_classes: 10
+  dropout_rate: 0.6
+
+# Training parameters
+training:
+  num_epochs: 30
+  learning_rate: 0.0005
+  weight_decay: 0.1
+  gradient_clip: 0.5
+  early_stopping_patience: 5
+  sim_loss_weight: 0.4
+
+# Data transforms
+transforms:
+  train:
+    resize: [256, 256]
+    crop_size: 224
+    mean: [0.485, 0.456, 0.406]
+    std: [0.229, 0.224, 0.225]
+  val:
+    resize: [224, 224]
+    mean: [0.485, 0.456, 0.406]
+    std: [0.229, 0.224, 0.225]
+
+# Output settings
+output:
+  checkpoints_dir: "checkpoints"
+  plots_dir: "outputs/plots"
+  analysis_dir: "outputs/analysis"
+  sample_predictions_dir: "outputs/sample_predictions"
+  log_level: "INFO"
