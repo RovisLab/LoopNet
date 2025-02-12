@@ -65,19 +65,6 @@ The evaluation produces:
 4. Detailed predictions for each test image
 5. Visualization samples
 
-## Known Issues and Future Work
-
-Current limitations:
-1. Overfitting (high training accuracy, lower validation accuracy)
-2. High confidence scores despite moderate performance
-3. Limited generalization across different environments
-
-Planned improvements:
-1. Enhanced data augmentation
-2. Improved regularization techniques
-3. Architecture optimization
-4. Cross-dataset validation
-5. Ensemble approaches
 
 ## Project Structure
 ```
